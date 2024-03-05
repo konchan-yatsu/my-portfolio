@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>shooting game</h1>
+    <h2>your score: <span id="score"></span></h2>
+    <button id="start">start</button>
+    <button id="detail">details</button>
+  </div>
+
+  <canvas id="canvas" width="800" height="500" style="background-color:#ccc;"></canvas>
+
+
+  <!-- 画像の読込用　非表示設定 -->
+  <p><img src="baloonImg.svg" alt="" id="balloon"></p>
+  <p><img src="canonImg.svg" alt="" id="canon"></p>
+
+  <div class="detail" id="modal">
+    <h2>ゲームの説明</h2>
+    <ul>
+      <li>startを押すとゲーム開始</li>
+      <li>左ボタン(←key)で左に移動</li>
+      <li>右ボタン(→key)で右に移動</li>
+      <li>spase-keyでビーム発射</li>
+      <li>風船一つ割るとscoreに10点加点</li>
+      <li>scoreが30点になるとゲームクリア</li>
+      <li>風船は1個づつ発生し、地面に落ちるとゲームオーバー</li>
+      <li>やり直しの場合は再ページ読込してください</li>
+    </ul>
+    <p><button id="close">close</button></p>
+  </div>
+
+
+
+  <script src="main.js"></script>
+  <script src="modal.js"></script>
+
+</body>
+
+</html>
