@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* このファイルに自分で設定したいスタイルを記述する */
+header h1 img {
+  height: 80px;
+}
+
+.carousel p img {
+  height: 500px;
+}

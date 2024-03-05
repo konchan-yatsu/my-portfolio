@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CDN bootstrap.css -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+  <!-- /CDN bootstrap.css -->
+
+  <!-- ローカル bootstrap.css -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- /ローカル bootstrap.css
+
+  <!-- 追加CSS custom.css -->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- /追加CSS custom.css -->
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- /Bootstrap Icons -->
+
+  <title>HomePage</title>
+</head>
+
+<body>
+  <!-- ヘッダー領域 -->
+  <header class="bg-dark py-2">
+    <!--  navbar ナビゲーション領域 -->
+    <nav class="container navbar navbar-dark">
+      <h1 class="mb-2"><a href="index.html" class=""><img src="img/logoKonchan.png" alt="logo" class="mw-100"></a>
+      </h1>
+      <!-- /ロゴ -->
+
+      <!-- navbar-toggler ハンバーガーアイコン -->
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar-nav メニュー -->
+      <ul class="navbar-nav collapse navbar-collapse" id="nav-menu">
+
+        <li>
+          <a class="nav-link" href="#about"><i class="bi bi-house"></i> Introduction/Career</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#skill"> <i class="bi bi-tree"></i>Skill/History</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#contact"><i class="bi bi-geo-alt"></i> Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- タイトル行 -->
+    <h1 class="text-center bg-dark" style="color:#fff">konchanコンサル事務所</h1>
+
+    <!-- スライドショー　自動再生 -->
+    <div id="carouselExampleAutoplaying" class="carousel slide mb-2" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <p> <img src="img/11324_color.svg" class="d-block w-100" alt="img1"></p>
+        </div>
+
+        <div class="carousel-item">
+          <p><img src="img/20015_color.svg" class="d-block w-100" alt="img2"></p>
+        </div>
+        <div class="carousel-item">
+          <p><img src="img/17549_color.svg" class="d-block w-100" alt="img3"></p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- 自己紹介 -->
+    <div class="container" id="about">
+      <div class="row align-items-center">
+        <div class="col-md-5 ">
+          <h2 class="ms-3">Self introduction</h2>
+          <p class="ms-3">
+            初めまして、前職は商社に勤務しており、主に経理を担当していました。かねてより、IT分野に興味をもっており、特にブロックチェーン技術の凄さに感銘し、私もこの分野に携わってみたいと感じ、エンジニアを目指しております。
+          </p>
+        </div>
+        <div class="col-md-5 ">
+          <button type="button" class="btn btn-primary ps-2 me-3" data-bs-toggle="modal"
+            data-bs-target="#exampleModal1">社労士での実績はこちら</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal2">経理職での実績はこちら</button>
+        </div>
+      </div>
+    </div>
+    <!-- -- Modal 1-- -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel1">社労士での実績</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-striped">
+              <tr>
+                <th>年月</th>
+                <td>摘要</td>
+              </tr>
+              <tr>
+                <th>2022/04</th>
+                <td>前職にて内部監査部門へ異動、社労士業務に興味。また以前にも海外駐在を２度しており、管理部門担当として人事業務の経験あり。</td>
+              </tr>
+              <tr>
+                <th>2023/10</th>
+                <td>前職退職後に社労士試験合格</td>
+              </tr>
+              <tr>
+                <th>2024/08</th>
+                <td>社労士実務経験である事務指定講習を修了</td>
+              </tr>
+            </table>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- -- Modal ２-- -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel2">経理職での実績</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-striped">
+              <tr>
+                <th>年月</th>
+                <td>摘要</td>
+              </tr>
+              <tr>
+                <th>2007/04</th>
+                <td>前職で初配属が経理部であり、延べ10年以上経験。単体決算、連結決算、開示関連、法人税申告と全般的に業務経験し、一通りの経理業務は遂行可能。</td>
+              </tr>
+              <tr>
+                <th>2009/03</th>
+                <td>USCPA試験に合格。その後、それが評価され、海外会社へのシステム導入ﾌﾟﾛｼﾞｪｸﾄに異動となり、多数の海外出張を経験</td>
+              </tr>
+              <tr>
+                <th>2021/04</th>
+                <td>ｽｷﾙﾏｰｹｯﾄｻｲﾄ”ｺｺﾅﾗ”にて経理ｽｷﾙを出品しており、多数の購買実績あり、一時ﾌﾟﾗﾁﾅ資格も取得や評価も5を頂いている</td>
+              </tr>
+            </table>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- コンテンツ2つ目 商品 -->
+    <section id="skill">
+
+      <!-- container -->
+      <div class="container py-4">
+
+        <!-- 見出し -->
+        <h2 class="mb-3">skill&history</h2>
+        <!-- /見出し -->
+
+        <!-- 段落 -->
+        <p>保有資格・スキル、経歴となります。</p>
+        <!-- /段落 -->
+
+        <!-- nav-tabs タブ部分 -->
+        <div class="nav nav-tabs">
+
+          <!-- nav-item タブ1つ目 -->
+          <a class="nav-item nav-link active" data-bs-toggle="tab" href=" #tab-01">資格</a>
+          <!-- nav-item タブ2つ目 -->
+          <a class="nav-item nav-link" data-bs-toggle="tab" href="#tab-02">経歴</a>
+
+        </div>
+
+        <!-- tab-content タブコンテンツ部分 -->
+        <div class="tab-content">
+          <!-- container tab-pane タブコンテンツ1つ目 -->
+          <div class="container tab-pane show active fade border border-top-0" id="tab-01">
+
+            <!-- row -->
+            <div class="row p-3">
+              <!-- col-md-5  画像 -->
+              <div class="col-md-5 mb-3 mb-md-0">
+                <img src="img/17915_color.svg" alt="資格" class="img-fluid">
+              </div>
+              <!-- col-md-7  見出し・テーブル -->
+              <div class="col-md-7">
+                <h4>資格</h4>
+                <!-- 見出し -->
+
+                <!-- テーブル -->
+                <table class="table table-striped">
+                  <tr>
+                    <th>資格・スキル名</th>
+                    <td>取得時期</td>
+                  </tr>
+                  <tr>
+                    <th>USCPA(米国公認会計士)合格</th>
+                    <td>2009/03</td>
+                  </tr>
+                  <tr>
+                    <th>社会保険労務士</th>
+                    <td>2023/11</td>
+                  </tr>
+                  <tr>
+                    <th>教員免許（中高理科）</th>
+                    <td>2007/03</td>
+                  </tr>
+                  <tr>
+                    <th>その他(宅建、FP2級、初級シスアド等)</th>
+                    <td>-</td>
+                  </tr>
+
+                </table>
+                <!-- /テーブル -->
+
+              </div>
+            </div>
+          </div>
+          <!-- container tab-pane タブコンテンツ2つ目 -->
+          <div class="container tab-pane show fade border border-top-0" id="tab-02">
+            <div class="row p-3">
+              <div class="col-md-5 mb-3 mb-md-0">
+                <img src="img/18183_color.svg" alt="経歴" class="img-fluid">
+              </div>
+              <div class="col-md-7">
+                <h4>経歴</h4>
+                <table class="table table-striped">
+                  <tr>
+                    <th>専門商社入社・経理部配属</th>
+                    <td>2007/04-2018/01</td>
+                  </tr>
+                  <tr>
+                    <th>上記の内、ｲﾝﾄﾞ駐在（海外研修生）</th>
+                    <td>2012/3-2012/12</td>
+                  </tr>
+                  <tr>
+                    <th>ｲﾝﾄﾞﾈｼｱ駐在</th>
+                    <td>2018/02-2020/3</td>
+                  </tr>
+                  <tr>
+                    <th>内部監査部門</th>
+                    <td>2020/04-2023/09</td>
+                  </tr>
+                  <tr>
+                    <th>退職後、職業訓練にてﾌﾟﾛｸﾞﾗﾐﾝｸﾞ学習</th>
+                    <td>2023/09退職,2023/11-2024/05在学</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 問い合わせフォーム -->
+    <section class="container py-4 " id="contact">
+      <h2 class="mb-3">Contact Form</h2>
+      <div class="row">
+        <p class="col-md-5 row"><img src="img/18890_color.svg" alt="picture-contact" class="col-md-5"><img
+            src="img/18897_color.svg" alt="picture-contact" class="col-md-5">
+        </p>
+        <form class="col-md-7">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Eﾒｰﾙｱﾄﾞﾚｽをご入力ください。</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">問い合わせ内容をご選択ください</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1:会計関連</option>
+              <option>2:社会保険関連</option>
+              <option>3:労務関連</option>
+              <option>4:IT関連</option>
+              <option>5:その他</option>
+            </select>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="exampleFormControlTextarea1">お問い合わせ内容をご入力ください</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <p class="text-end"><button type="submit" class="btn btn-primary">送信ボタン</button>
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- フッター領域 -->
+  <footer class="py-2 bg-dark text-light text-center">
+    <p><small>konchanコンサル事務所</small></p>
+  </footer>
+
+
+  <!-- CDN bootstrap.bundle.js -->
+  <!-- <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+  <!-- /CDN  bootstrap.bundle.js -->
+
+  <!-- ローカル  bootstrap.bundle.js -->
+  <script src="js/bootstrap.bundle.js"></script>
+  <!-- /ローカル  bootstrap.bundle.js -->
+
+  <!-- 追加JS custom.js -->
+  <script src="js/custom.js"></script>
+  <!-- /追加JS custom.js -->
+
+
+
+
+</body>
+
+</html>
