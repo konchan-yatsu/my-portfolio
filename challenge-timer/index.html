@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="whole">
+    <p class="title">countdown timer</p>
+
+    <p class="display">remaining/残り<br> <span id="hour"></span>hour:<span id="min"></span>min:<span id="sec"></span>sec
+    </p>
+
+    <form action="#" id="form">
+      <input type="number" name="hourInput" placeholder="h">
+      <input type="number" name="minInput" placeholder="m">
+      <input type="number" name="secInput" placeholder="s">
+    </form>
+
+    <div class="btnGroup">
+
+      <form action="#" id="btnStart">
+        <input type="submit" value="start" name="nameStart">
+      </form>
+
+      <form action="#" id="btnStop">
+        <input type="submit" value="stop" name="nameStop">
+      </form>
+
+      <form action="#" id="btnReset">
+        <input type="submit" value="reset">
+      </form>
+
+
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
